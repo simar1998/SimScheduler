@@ -1,0 +1,29 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option java_outer_classname = "ScheduleProto";
+
+//Unsure if efficent, but gonna ignore the urge to make more "proper"
+message Schedule {
+  string personName = 1;
+  string scheduleRevision = 2;
+  repeated ScheduleSlot slots = 3;
+}
+
+message ScheduleSlot {
+  int32 ID = 1;
+  string slotName = 2;
+  string slotDesc = 3;
+  google.protobuf.Timestamp startTime = 4;
+  google.protobuf.Timestamp endTime = 5;
+  enum Day {
+    MON = 0;
+    TUE = 1;
+    WED = 2;
+    THU = 3;
+    FRI = 4;
+    SAT = 5;
+    SUN = 6;
+  }
+  Day day = 6;
+}
+
