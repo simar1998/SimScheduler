@@ -1,4 +1,4 @@
-#SIM-SCHEDULER (CLOM-MODULE)
+# SIM-SCHEDULER (CLOM-MODULE)
 
 SimScheduler is a personal life improvement application to assist me in my drive for conformity with my personally mandated schedule. I will try my best to try to make it as basic 
 as possible initialy however there will be future plans to overhaul current application with means of communicating with ADA and the the general Centralized Life Optamization Module (CLOM).
