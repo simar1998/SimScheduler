@@ -1148,34 +1148,34 @@ public final class ScheduleProto {
         getSlotDescBytes();
 
     /**
-     * <code>.google.protobuf.Timestamp startTime = 4;</code>
+     * <code>.TimeStamp startTime = 4;</code>
      * @return Whether the startTime field is set.
      */
     boolean hasStartTime();
     /**
-     * <code>.google.protobuf.Timestamp startTime = 4;</code>
+     * <code>.TimeStamp startTime = 4;</code>
      * @return The startTime.
      */
-    com.google.protobuf.Timestamp getStartTime();
+    ScheduleProto.TimeStamp getStartTime();
     /**
-     * <code>.google.protobuf.Timestamp startTime = 4;</code>
+     * <code>.TimeStamp startTime = 4;</code>
      */
-    com.google.protobuf.TimestampOrBuilder getStartTimeOrBuilder();
+    ScheduleProto.TimeStampOrBuilder getStartTimeOrBuilder();
 
     /**
-     * <code>.google.protobuf.Timestamp endTime = 5;</code>
+     * <code>.TimeStamp endTime = 5;</code>
      * @return Whether the endTime field is set.
      */
     boolean hasEndTime();
     /**
-     * <code>.google.protobuf.Timestamp endTime = 5;</code>
+     * <code>.TimeStamp endTime = 5;</code>
      * @return The endTime.
      */
-    com.google.protobuf.Timestamp getEndTime();
+    ScheduleProto.TimeStamp getEndTime();
     /**
-     * <code>.google.protobuf.Timestamp endTime = 5;</code>
+     * <code>.TimeStamp endTime = 5;</code>
      */
-    com.google.protobuf.TimestampOrBuilder getEndTimeOrBuilder();
+    ScheduleProto.TimeStampOrBuilder getEndTimeOrBuilder();
 
     /**
      * <code>.ScheduleSlot.Day day = 6;</code>
@@ -1254,11 +1254,11 @@ public final class ScheduleProto {
               break;
             }
             case 34: {
-              com.google.protobuf.Timestamp.Builder subBuilder = null;
+              ScheduleProto.TimeStamp.Builder subBuilder = null;
               if (startTime_ != null) {
                 subBuilder = startTime_.toBuilder();
               }
-              startTime_ = input.readMessage(com.google.protobuf.Timestamp.parser(), extensionRegistry);
+              startTime_ = input.readMessage(ScheduleProto.TimeStamp.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(startTime_);
                 startTime_ = subBuilder.buildPartial();
@@ -1267,11 +1267,11 @@ public final class ScheduleProto {
               break;
             }
             case 42: {
-              com.google.protobuf.Timestamp.Builder subBuilder = null;
+              ScheduleProto.TimeStamp.Builder subBuilder = null;
               if (endTime_ != null) {
                 subBuilder = endTime_.toBuilder();
               }
-              endTime_ = input.readMessage(com.google.protobuf.Timestamp.parser(), extensionRegistry);
+              endTime_ = input.readMessage(ScheduleProto.TimeStamp.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(endTime_);
                 endTime_ = subBuilder.buildPartial();
@@ -1558,9 +1558,9 @@ public final class ScheduleProto {
     }
 
     public static final int STARTTIME_FIELD_NUMBER = 4;
-    private com.google.protobuf.Timestamp startTime_;
+    private ScheduleProto.TimeStamp startTime_;
     /**
-     * <code>.google.protobuf.Timestamp startTime = 4;</code>
+     * <code>.TimeStamp startTime = 4;</code>
      * @return Whether the startTime field is set.
      */
     @java.lang.Override
@@ -1568,25 +1568,25 @@ public final class ScheduleProto {
       return startTime_ != null;
     }
     /**
-     * <code>.google.protobuf.Timestamp startTime = 4;</code>
+     * <code>.TimeStamp startTime = 4;</code>
      * @return The startTime.
      */
     @java.lang.Override
-    public com.google.protobuf.Timestamp getStartTime() {
-      return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
+    public ScheduleProto.TimeStamp getStartTime() {
+      return startTime_ == null ? ScheduleProto.TimeStamp.getDefaultInstance() : startTime_;
     }
     /**
-     * <code>.google.protobuf.Timestamp startTime = 4;</code>
+     * <code>.TimeStamp startTime = 4;</code>
      */
     @java.lang.Override
-    public com.google.protobuf.TimestampOrBuilder getStartTimeOrBuilder() {
+    public ScheduleProto.TimeStampOrBuilder getStartTimeOrBuilder() {
       return getStartTime();
     }
 
     public static final int ENDTIME_FIELD_NUMBER = 5;
-    private com.google.protobuf.Timestamp endTime_;
+    private ScheduleProto.TimeStamp endTime_;
     /**
-     * <code>.google.protobuf.Timestamp endTime = 5;</code>
+     * <code>.TimeStamp endTime = 5;</code>
      * @return Whether the endTime field is set.
      */
     @java.lang.Override
@@ -1594,18 +1594,18 @@ public final class ScheduleProto {
       return endTime_ != null;
     }
     /**
-     * <code>.google.protobuf.Timestamp endTime = 5;</code>
+     * <code>.TimeStamp endTime = 5;</code>
      * @return The endTime.
      */
     @java.lang.Override
-    public com.google.protobuf.Timestamp getEndTime() {
-      return endTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
+    public ScheduleProto.TimeStamp getEndTime() {
+      return endTime_ == null ? ScheduleProto.TimeStamp.getDefaultInstance() : endTime_;
     }
     /**
-     * <code>.google.protobuf.Timestamp endTime = 5;</code>
+     * <code>.TimeStamp endTime = 5;</code>
      */
     @java.lang.Override
-    public com.google.protobuf.TimestampOrBuilder getEndTimeOrBuilder() {
+    public ScheduleProto.TimeStampOrBuilder getEndTimeOrBuilder() {
       return getEndTime();
     }
 
@@ -2223,31 +2223,31 @@ public final class ScheduleProto {
         return this;
       }
 
-      private com.google.protobuf.Timestamp startTime_;
+      private ScheduleProto.TimeStamp startTime_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> startTimeBuilder_;
+          ScheduleProto.TimeStamp, ScheduleProto.TimeStamp.Builder, ScheduleProto.TimeStampOrBuilder> startTimeBuilder_;
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        * @return Whether the startTime field is set.
        */
       public boolean hasStartTime() {
         return startTimeBuilder_ != null || startTime_ != null;
       }
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        * @return The startTime.
        */
-      public com.google.protobuf.Timestamp getStartTime() {
+      public ScheduleProto.TimeStamp getStartTime() {
         if (startTimeBuilder_ == null) {
-          return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
+          return startTime_ == null ? ScheduleProto.TimeStamp.getDefaultInstance() : startTime_;
         } else {
           return startTimeBuilder_.getMessage();
         }
       }
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        */
-      public Builder setStartTime(com.google.protobuf.Timestamp value) {
+      public Builder setStartTime(ScheduleProto.TimeStamp value) {
         if (startTimeBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2261,10 +2261,10 @@ public final class ScheduleProto {
         return this;
       }
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        */
       public Builder setStartTime(
-          com.google.protobuf.Timestamp.Builder builderForValue) {
+          ScheduleProto.TimeStamp.Builder builderForValue) {
         if (startTimeBuilder_ == null) {
           startTime_ = builderForValue.build();
           onChanged();
@@ -2275,13 +2275,13 @@ public final class ScheduleProto {
         return this;
       }
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        */
-      public Builder mergeStartTime(com.google.protobuf.Timestamp value) {
+      public Builder mergeStartTime(ScheduleProto.TimeStamp value) {
         if (startTimeBuilder_ == null) {
           if (startTime_ != null) {
             startTime_ =
-              com.google.protobuf.Timestamp.newBuilder(startTime_).mergeFrom(value).buildPartial();
+              ScheduleProto.TimeStamp.newBuilder(startTime_).mergeFrom(value).buildPartial();
           } else {
             startTime_ = value;
           }
@@ -2293,7 +2293,7 @@ public final class ScheduleProto {
         return this;
       }
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        */
       public Builder clearStartTime() {
         if (startTimeBuilder_ == null) {
@@ -2307,33 +2307,33 @@ public final class ScheduleProto {
         return this;
       }
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        */
-      public com.google.protobuf.Timestamp.Builder getStartTimeBuilder() {
+      public ScheduleProto.TimeStamp.Builder getStartTimeBuilder() {
         
         onChanged();
         return getStartTimeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        */
-      public com.google.protobuf.TimestampOrBuilder getStartTimeOrBuilder() {
+      public ScheduleProto.TimeStampOrBuilder getStartTimeOrBuilder() {
         if (startTimeBuilder_ != null) {
           return startTimeBuilder_.getMessageOrBuilder();
         } else {
           return startTime_ == null ?
-              com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
+              ScheduleProto.TimeStamp.getDefaultInstance() : startTime_;
         }
       }
       /**
-       * <code>.google.protobuf.Timestamp startTime = 4;</code>
+       * <code>.TimeStamp startTime = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
+          ScheduleProto.TimeStamp, ScheduleProto.TimeStamp.Builder, ScheduleProto.TimeStampOrBuilder> 
           getStartTimeFieldBuilder() {
         if (startTimeBuilder_ == null) {
           startTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
+              ScheduleProto.TimeStamp, ScheduleProto.TimeStamp.Builder, ScheduleProto.TimeStampOrBuilder>(
                   getStartTime(),
                   getParentForChildren(),
                   isClean());
@@ -2342,31 +2342,31 @@ public final class ScheduleProto {
         return startTimeBuilder_;
       }
 
-      private com.google.protobuf.Timestamp endTime_;
+      private ScheduleProto.TimeStamp endTime_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> endTimeBuilder_;
+          ScheduleProto.TimeStamp, ScheduleProto.TimeStamp.Builder, ScheduleProto.TimeStampOrBuilder> endTimeBuilder_;
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        * @return Whether the endTime field is set.
        */
       public boolean hasEndTime() {
         return endTimeBuilder_ != null || endTime_ != null;
       }
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        * @return The endTime.
        */
-      public com.google.protobuf.Timestamp getEndTime() {
+      public ScheduleProto.TimeStamp getEndTime() {
         if (endTimeBuilder_ == null) {
-          return endTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
+          return endTime_ == null ? ScheduleProto.TimeStamp.getDefaultInstance() : endTime_;
         } else {
           return endTimeBuilder_.getMessage();
         }
       }
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        */
-      public Builder setEndTime(com.google.protobuf.Timestamp value) {
+      public Builder setEndTime(ScheduleProto.TimeStamp value) {
         if (endTimeBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2380,10 +2380,10 @@ public final class ScheduleProto {
         return this;
       }
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        */
       public Builder setEndTime(
-          com.google.protobuf.Timestamp.Builder builderForValue) {
+          ScheduleProto.TimeStamp.Builder builderForValue) {
         if (endTimeBuilder_ == null) {
           endTime_ = builderForValue.build();
           onChanged();
@@ -2394,13 +2394,13 @@ public final class ScheduleProto {
         return this;
       }
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        */
-      public Builder mergeEndTime(com.google.protobuf.Timestamp value) {
+      public Builder mergeEndTime(ScheduleProto.TimeStamp value) {
         if (endTimeBuilder_ == null) {
           if (endTime_ != null) {
             endTime_ =
-              com.google.protobuf.Timestamp.newBuilder(endTime_).mergeFrom(value).buildPartial();
+              ScheduleProto.TimeStamp.newBuilder(endTime_).mergeFrom(value).buildPartial();
           } else {
             endTime_ = value;
           }
@@ -2412,7 +2412,7 @@ public final class ScheduleProto {
         return this;
       }
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        */
       public Builder clearEndTime() {
         if (endTimeBuilder_ == null) {
@@ -2426,33 +2426,33 @@ public final class ScheduleProto {
         return this;
       }
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        */
-      public com.google.protobuf.Timestamp.Builder getEndTimeBuilder() {
+      public ScheduleProto.TimeStamp.Builder getEndTimeBuilder() {
         
         onChanged();
         return getEndTimeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        */
-      public com.google.protobuf.TimestampOrBuilder getEndTimeOrBuilder() {
+      public ScheduleProto.TimeStampOrBuilder getEndTimeOrBuilder() {
         if (endTimeBuilder_ != null) {
           return endTimeBuilder_.getMessageOrBuilder();
         } else {
           return endTime_ == null ?
-              com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
+              ScheduleProto.TimeStamp.getDefaultInstance() : endTime_;
         }
       }
       /**
-       * <code>.google.protobuf.Timestamp endTime = 5;</code>
+       * <code>.TimeStamp endTime = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
+          ScheduleProto.TimeStamp, ScheduleProto.TimeStamp.Builder, ScheduleProto.TimeStampOrBuilder> 
           getEndTimeFieldBuilder() {
         if (endTimeBuilder_ == null) {
           endTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
+              ScheduleProto.TimeStamp, ScheduleProto.TimeStamp.Builder, ScheduleProto.TimeStampOrBuilder>(
                   getEndTime(),
                   getParentForChildren(),
                   isClean());
@@ -2567,6 +2567,564 @@ public final class ScheduleProto {
 
   }
 
+  public interface TimeStampOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:TimeStamp)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 hour = 1;</code>
+     * @return The hour.
+     */
+    int getHour();
+
+    /**
+     * <code>int32 min = 2;</code>
+     * @return The min.
+     */
+    int getMin();
+  }
+  /**
+   * Protobuf type {@code TimeStamp}
+   */
+  public static final class TimeStamp extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:TimeStamp)
+      TimeStampOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use TimeStamp.newBuilder() to construct.
+    private TimeStamp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private TimeStamp() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new TimeStamp();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private TimeStamp(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              hour_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              min_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return ScheduleProto.internal_static_TimeStamp_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return ScheduleProto.internal_static_TimeStamp_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              ScheduleProto.TimeStamp.class, ScheduleProto.TimeStamp.Builder.class);
+    }
+
+    public static final int HOUR_FIELD_NUMBER = 1;
+    private int hour_;
+    /**
+     * <code>int32 hour = 1;</code>
+     * @return The hour.
+     */
+    @java.lang.Override
+    public int getHour() {
+      return hour_;
+    }
+
+    public static final int MIN_FIELD_NUMBER = 2;
+    private int min_;
+    /**
+     * <code>int32 min = 2;</code>
+     * @return The min.
+     */
+    @java.lang.Override
+    public int getMin() {
+      return min_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (hour_ != 0) {
+        output.writeInt32(1, hour_);
+      }
+      if (min_ != 0) {
+        output.writeInt32(2, min_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (hour_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, hour_);
+      }
+      if (min_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, min_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof ScheduleProto.TimeStamp)) {
+        return super.equals(obj);
+      }
+      ScheduleProto.TimeStamp other = (ScheduleProto.TimeStamp) obj;
+
+      if (getHour()
+          != other.getHour()) return false;
+      if (getMin()
+          != other.getMin()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + HOUR_FIELD_NUMBER;
+      hash = (53 * hash) + getHour();
+      hash = (37 * hash) + MIN_FIELD_NUMBER;
+      hash = (53 * hash) + getMin();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static ScheduleProto.TimeStamp parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static ScheduleProto.TimeStamp parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static ScheduleProto.TimeStamp parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static ScheduleProto.TimeStamp parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(ScheduleProto.TimeStamp prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code TimeStamp}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:TimeStamp)
+        ScheduleProto.TimeStampOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return ScheduleProto.internal_static_TimeStamp_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return ScheduleProto.internal_static_TimeStamp_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                ScheduleProto.TimeStamp.class, ScheduleProto.TimeStamp.Builder.class);
+      }
+
+      // Construct using ScheduleProto.TimeStamp.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        hour_ = 0;
+
+        min_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return ScheduleProto.internal_static_TimeStamp_descriptor;
+      }
+
+      @java.lang.Override
+      public ScheduleProto.TimeStamp getDefaultInstanceForType() {
+        return ScheduleProto.TimeStamp.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public ScheduleProto.TimeStamp build() {
+        ScheduleProto.TimeStamp result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public ScheduleProto.TimeStamp buildPartial() {
+        ScheduleProto.TimeStamp result = new ScheduleProto.TimeStamp(this);
+        result.hour_ = hour_;
+        result.min_ = min_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof ScheduleProto.TimeStamp) {
+          return mergeFrom((ScheduleProto.TimeStamp)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(ScheduleProto.TimeStamp other) {
+        if (other == ScheduleProto.TimeStamp.getDefaultInstance()) return this;
+        if (other.getHour() != 0) {
+          setHour(other.getHour());
+        }
+        if (other.getMin() != 0) {
+          setMin(other.getMin());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        ScheduleProto.TimeStamp parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (ScheduleProto.TimeStamp) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int hour_ ;
+      /**
+       * <code>int32 hour = 1;</code>
+       * @return The hour.
+       */
+      @java.lang.Override
+      public int getHour() {
+        return hour_;
+      }
+      /**
+       * <code>int32 hour = 1;</code>
+       * @param value The hour to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHour(int value) {
+        
+        hour_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 hour = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHour() {
+        
+        hour_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int min_ ;
+      /**
+       * <code>int32 min = 2;</code>
+       * @return The min.
+       */
+      @java.lang.Override
+      public int getMin() {
+        return min_;
+      }
+      /**
+       * <code>int32 min = 2;</code>
+       * @param value The min to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMin(int value) {
+        
+        min_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 min = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMin() {
+        
+        min_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:TimeStamp)
+    }
+
+    // @@protoc_insertion_point(class_scope:TimeStamp)
+    private static final ScheduleProto.TimeStamp DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new ScheduleProto.TimeStamp();
+    }
+
+    public static ScheduleProto.TimeStamp getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TimeStamp>
+        PARSER = new com.google.protobuf.AbstractParser<TimeStamp>() {
+      @java.lang.Override
+      public TimeStamp parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new TimeStamp(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<TimeStamp> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TimeStamp> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public ScheduleProto.TimeStamp getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Schedule_descriptor;
   private static final 
@@ -2577,6 +3135,11 @@ public final class ScheduleProto {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ScheduleSlot_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_TimeStamp_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_TimeStamp_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2589,14 +3152,14 @@ public final class ScheduleProto {
       "\n\022simschedular.proto\032\037google/protobuf/ti" +
       "mestamp.proto\"V\n\010Schedule\022\022\n\npersonName\030" +
       "\001 \001(\t\022\030\n\020scheduleRevision\030\002 \001(\t\022\034\n\005slots" +
-      "\030\003 \003(\0132\r.ScheduleSlot\"\200\002\n\014ScheduleSlot\022\n" +
+      "\030\003 \003(\0132\r.ScheduleSlot\"\340\001\n\014ScheduleSlot\022\n" +
       "\n\002ID\030\001 \001(\005\022\020\n\010slotName\030\002 \001(\t\022\020\n\010slotDesc" +
-      "\030\003 \001(\t\022-\n\tstartTime\030\004 \001(\0132\032.google.proto" +
-      "buf.Timestamp\022+\n\007endTime\030\005 \001(\0132\032.google." +
-      "protobuf.Timestamp\022\036\n\003day\030\006 \001(\0162\021.Schedu" +
-      "leSlot.Day\"D\n\003Day\022\007\n\003MON\020\000\022\007\n\003TUE\020\001\022\007\n\003W" +
-      "ED\020\002\022\007\n\003THU\020\003\022\007\n\003FRI\020\004\022\007\n\003SAT\020\005\022\007\n\003SUN\020\006" +
-      "B\017B\rScheduleProtob\006proto3"
+      "\030\003 \001(\t\022\035\n\tstartTime\030\004 \001(\0132\n.TimeStamp\022\033\n" +
+      "\007endTime\030\005 \001(\0132\n.TimeStamp\022\036\n\003day\030\006 \001(\0162" +
+      "\021.ScheduleSlot.Day\"D\n\003Day\022\007\n\003MON\020\000\022\007\n\003TU" +
+      "E\020\001\022\007\n\003WED\020\002\022\007\n\003THU\020\003\022\007\n\003FRI\020\004\022\007\n\003SAT\020\005\022" +
+      "\007\n\003SUN\020\006\"&\n\tTimeStamp\022\014\n\004hour\030\001 \001(\005\022\013\n\003m" +
+      "in\030\002 \001(\005B\017B\rScheduleProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2615,6 +3178,12 @@ public final class ScheduleProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScheduleSlot_descriptor,
         new java.lang.String[] { "ID", "SlotName", "SlotDesc", "StartTime", "EndTime", "Day", });
+    internal_static_TimeStamp_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_TimeStamp_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_TimeStamp_descriptor,
+        new java.lang.String[] { "Hour", "Min", });
     com.google.protobuf.TimestampProto.getDescriptor();
   }
 

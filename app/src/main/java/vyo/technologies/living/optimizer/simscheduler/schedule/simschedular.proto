@@ -13,8 +13,8 @@ message ScheduleSlot {
   int32 ID = 1;
   string slotName = 2;
   string slotDesc = 3;
-  google.protobuf.Timestamp startTime = 4;
-  google.protobuf.Timestamp endTime = 5;
+  TimeStamp startTime = 4;
+  TimeStamp endTime = 5;
   enum Day {
     MON = 0;
     TUE = 1;
@@ -25,5 +25,10 @@ message ScheduleSlot {
     SUN = 6;
   }
   Day day = 6;
+}
+
+message TimeStamp {
+  int32 hour = 1;
+  int32 min = 2;
 }
 
